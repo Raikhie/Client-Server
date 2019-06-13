@@ -4,7 +4,7 @@ public SNMPClient(String address)
 }
 public static void main(String[] args) throws IOException 
 {
-    SNMPClient client = new SNMPClient("udp:192.168.56.1/161");
+    SNMPClient client = new SNMPClient("udp:192.168.174.135/161");
     client.start();
     String sysDescr = client.getAsString(new OID(".1.3.6.1.2.1.1.1.0"));
     System.out.println(sysDescr);
